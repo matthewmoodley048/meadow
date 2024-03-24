@@ -1,0 +1,51 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.main {
+  text-decoration: none;
+  color: #7D7C7C;
+  transition: 0.4s;
+}
+.secondary {
+  text-decoration: none;
+  color: #191717;
+  transition: 0.4s;
+}
+.background {
+  text-decoration: none;
+  color: #CCC8AA;
+  transition: 0.4s;
+}
+*::-webkit-scrollbar {
+  width: 0px; /* Adjust the width as needed */
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20%;
+    padding: 2%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}

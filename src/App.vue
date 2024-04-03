@@ -50,12 +50,12 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow:5px 5px  rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 2px 3px rgba(0,0,0,0.1);
   overflow-x: hidden;
   scrollbar-width: 200%;
   overflow-y: scroll;
   height: 80%;
-  width: 80vw;
+  width: 85vw;
   border-style:ridge;
 }
 *::-webkit-scrollbar {
@@ -104,8 +104,8 @@ nav a:first-of-type {
   scrollbar-width: 200%;
   overflow-y: scroll;
   height: 80%;
-  width: 80vw;
-  box-shadow:5px 5px  rgba(0, 0, 0, 0.2);
+  width: 85vw;
+  box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.05), inset 0px 0px 2px 3px rgba(0,0,0, 0,1) ;
   border-style:ridge;
 }
 

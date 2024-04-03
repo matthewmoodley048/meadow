@@ -23,8 +23,7 @@ homeCards.forEach((card: Element) => {
         <RouterLink to="postone">
             <div class="homeCard">
                 <div class="imageSection">        
-            <img src="../assets/images/backendicon.jpg" class="image"/>
-            </div>
+                </div>
                 <div><h2 class="title1">A trip to the </h2><h1 class="title2">backend</h1></div>
             </div>
        </RouterLink>
@@ -75,27 +74,18 @@ homeCards.forEach((card: Element) => {
 
   
 <style scoped>
-.image{
-    align-content: center;
-    width: 100%;
-    height: 100%;
-    border-style:groove;
-    border-color: whitesmoke;
-    border-width: 5px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
 .title1{
   text-align: start;
   padding: 1px;
-  font-size: 3vh;
+    margin-left:10px;
+  font-size: 4vh;
   color: black
 }
 .title2{
     text-align: center;
-    font-size: 7vh;
+    font-size: 6vh;
     bottom: 2vh;
-    margin-right: 50px;
+    margin-right: 1px;
     position: relative;
     color: black
 }
@@ -151,7 +141,9 @@ transform: scale(1.2);
 
 .imageSection {
     position: relative;
+    background: url("../assets/images/backend.jpg") no-repeat center;
     border-radius: 5px;
+    background-size: cover;
     text-align: center;
     width: 26.5vw;
     height: 20vh;
@@ -226,12 +218,9 @@ transform: scale(1.2);
 .image{
     align-content: center;
     width: 100%;
-    height: 100%;
-    border-style:groove;
-    border-color: whitesmoke;
-    border-width: 5px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    height: 110%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .imageSection {
     position: relative;

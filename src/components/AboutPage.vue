@@ -22,7 +22,7 @@
 <style scoped>
     .container {
         display: flex;
-        margin: 0 auto;
+        margin: auto;
         padding: 0;
         flex-direction: column;
         align-items: center;

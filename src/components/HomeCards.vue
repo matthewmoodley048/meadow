@@ -259,6 +259,7 @@ transform: scale(1.2);
     
     .columns{
     columns: 1;
+    margin-top: 3em;
     padding: 1%;
 }}
 </style>

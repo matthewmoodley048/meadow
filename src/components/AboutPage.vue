@@ -10,7 +10,7 @@
     <div class="imageContainer"></div>
         <div class="textContainer">
             <p class="body">
-            Meadow was created by me as a platform to document topics I have explored or am currently exploring, as well as to discuss projects I have completed. 
+                Meadow was created by <a href="https://www.linkedin.com/in/matthew-moodley-148072235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">me </a> as a platform to document topics I have explored or am currently exploring, as well as to discuss projects I have completed. 
             </p>
       <p class="body">
       Through Meadow, both you, the reader, and I can learn together about various computer-related topics and how knowledge, passion, and enjoyment can empower us to create our own beautiful creations.      

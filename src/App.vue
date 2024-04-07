@@ -5,40 +5,30 @@ import NavBar from './components/NavBar.vue';
 </script>
 
 <template >
-    <!-- <img src='./components/images/village.jpg' class="image" /> -->
-  <div class="wrapper">
-    <RouterView/>
-  </div>
+   <div class="wrapper">
+    <router-view v-slot="{Component}">
+      <Transition name="page-opacity" mode="out-in">
+        <component :is="Component"/>
+      </Transition>
+    </router-view>
+   </div>
   <NavBar msg="Meadow"/>
 </template>
 
 <style scoped>
 
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+
+.page-opacity-enter-active,
+.page-opacity-leave-active {
+ transition: 600ms ease all;
 }
 
-
-.image{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.page-opacity-enter-from,
+.page-opacity-leave-to{
+ opacity: 0;
+ transform: translateY(60px)
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
 .wrapper{
   align-content: center;
   color: rgb(0, 0, 0);
@@ -86,11 +76,6 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
   .wrapper{
   position: fixed;
   background-color: rgba(255, 255, 255, 0.4);
@@ -109,17 +94,5 @@ nav a:first-of-type {
   border-style:ridge;
 }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
 }
 </style>

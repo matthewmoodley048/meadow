@@ -24,7 +24,7 @@ homeCards.forEach((card: Element) => {
             <div class="homeCard">
                 <div class="imageSection">        
                 </div>
-                <div><h2 class="title1">A trip to the </h2><h1 class="title2">backend</h1></div>
+                <div><h2 class="title1">Educating a</h2><h1 class="title2">machine</h1></div>
             </div>
        </RouterLink>
 
@@ -141,7 +141,7 @@ transform: scale(1.2);
 
 .imageSection {
     position: relative;
-    background: url("../assets/images/backend.jpg") no-repeat center;
+    background: url("../assets/images/machineLearning.jpg") no-repeat center;
     border-radius: 5px;
     background-size: cover;
     text-align: center;

@@ -36,19 +36,16 @@
         background-size: contain;
         border-radius: 0px;
         box-shadow: inset 0px 0px 10px 50px #f2f2f2, 0px 0px 10px 10px #f2f2f2;
-        animation: fade 1.5s ease-in-out;
         margin-bottom: 20px;
     }
 
     .textContainer {
         text-align: left;
-        animation: fade 1.7s ease-in-out;
     }
 
     h1 {
         font-weight: 500;
         font-size: 3vh;
-        animation: fade 1s ease-in-out;
     }
 
     .body {
@@ -57,13 +54,5 @@
         padding:1vh 10vw;
     }
 
-    @keyframes fade {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
 </style>
 

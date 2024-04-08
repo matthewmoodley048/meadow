@@ -38,14 +38,12 @@ import NavBar from './components/NavBar.vue';
   border-radius: 2%;
   border-width: 10px;
   top: 45vh;
-  left: 42vw;
+  left: 50vw;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 2px 3px rgba(0,0,0,0.1);
-  overflow-x: hidden;
-  scrollbar-width: 200%;
   overflow-y: scroll;
   height: 80vh;
-  width: 85vw;
+  width: 80vw;
   border-style:ridge;
 }
 *::-webkit-scrollbar {

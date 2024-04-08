@@ -35,7 +35,7 @@ homeCards.forEach((card: Element) => {
             <h1 class="unavailbleText"> [UNAVAILABLE]</h1>
    
         </div>
-            <div><h2 class="commingSoon">Comming soon ...</h2></div>
+            <div><h2 class="commingSoon">Coming soon ...</h2></div>
         </div>
     </div>
 
@@ -101,10 +101,10 @@ transform: scale(0.8);
 transform: scale(1.2);
 }
 .unavailbleText{
-    font-size: 35px;
+    font-size: 30vw;
     color: rgb(0, 0, 0);
     position: relative;
-    bottom: 150%;
+    bottom: 15%;
 }
 .unavailbleBackground{
     font-size: 250px;
@@ -145,7 +145,7 @@ transform: scale(1.2);
     border-radius: 5px;
     background-size: cover;
     text-align: center;
-    width: 26.5vw;
+    width: 30vw;
     height: 20vh;
     overflow: hidden;
     margin-bottom: 19px;
@@ -259,7 +259,7 @@ transform: scale(1.2);
     
     .columns{
     columns: 1;
-    margin-top: 3em;
+    margin-top: 30em;
     padding: 1%;
 }}
 </style>

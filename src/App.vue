@@ -32,19 +32,19 @@ import NavBar from './components/NavBar.vue';
 .wrapper{
   align-content: center;
   color: rgb(0, 0, 0);
-  position: fixed;
+  position: relative;
   background-color: rgba(255, 255, 255, 0.4);
   border-color: rgba(255, 255, 255, 0.2);
   border-radius: 2%;
   border-width: 10px;
-  top: 50%;
-  left: 50%;
+  top: 45vh;
+  left: 42vw;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 2px 3px rgba(0,0,0,0.1);
   overflow-x: hidden;
   scrollbar-width: 200%;
   overflow-y: scroll;
-  height: 80%;
+  height: 80vh;
   width: 85vw;
   border-style:ridge;
 }

@@ -11,8 +11,8 @@ defineProps<{
         <RouterLink class="navItems" to="/">Home</RouterLink>
          |
         <RouterLink  class="navItems" to="/about">About</RouterLink>
+    <h1> {{ msg }}</h1>
     </nav>
-    <h1 class="main"> {{ msg }}</h1>
 
   </div>
 </template>
@@ -21,9 +21,7 @@ defineProps<{
 h1 {
   font-weight: 500;
   font-size: 2rem;
-  position: relative;
-  top: -10px;
-  
+  position: fixed;
 }
 
 h3 {
@@ -43,7 +41,7 @@ h3 {
 
 .nav{
   position: fixed;
-  top: 95%;
+  top: 90%;
   text-align: center;
     padding: 1%;
     width: 15%;

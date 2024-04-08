@@ -32,7 +32,6 @@ import NavBar from './components/NavBar.vue';
 .wrapper{
   align-content: center;
   color: rgb(0, 0, 0);
-  position: fixed;
   background-color: rgba(255, 255, 255, 0.4);
   border-color: rgba(255, 255, 255, 0.2);
   border-radius: 2%;

@@ -7,8 +7,8 @@
   
     <h1>Educating a machine</h1>
   <hr class="rounded"/>
-  <div class="columns">
     <h2>Introduction</h2>
+  <div class="columns">
     <div class="coverImage"/>
     <article class="blocks">
      <p>
@@ -24,10 +24,10 @@ To summarize and actually define what machine learning is, it is simply solving 
      </p>
     </article>
   </div>
-  <div class="columns">
     <hr class="rounded"/>
-  <article class="blocks">
+  <div class="columns">
     <h2>Types of machine learning</h2>
+  <article class="blocks">
       <p>
 There are four types of machine learning, namely Supervised learning, Semi-supervised learning, Un-supervised learning and reinforcement learning.To keep this short ill be focusing on the two main types Supervised and Un-supervised. 
       </p>
@@ -57,10 +57,10 @@ A use case would be to categorize customers ( budget conscious spender, high val
   </article>
   </div>
 
-  <div class="columns">
     <hr class="rounded"/>
-    <article class="blocks">
+  <div class="columns">
       <h2>Evaluation methods</h2>
+    <article class="blocks">
       <p>
 Now that you have understand some of the machine learning types, lets talk about evaluation methods.
       </p>
@@ -85,10 +85,10 @@ This helps alleviate the problem seen in the train and test method of predicting
     </article> 
   </div>
 
-  <div class="columns">
     <hr class="rounded"/>
-    <article class="blocks">
+  <div class="columns">
       <h2>Conclusion</h2>
+    <article class="blocks">
       <p>
 So, to wrap it up, machine learning isn't some magic trick where a computer suddenly gets super smart. 
       </p>
@@ -125,6 +125,7 @@ h2{
   font-weight: bold;
   font-size: 2.5vw;
   margin: 0.5em;
+  text-align: flex-start;
 }
 
 .header h1,
@@ -169,6 +170,7 @@ overflow-wrap: break-word;
 
 .columns {
  columns: 2;
+ margin-top: 4em;
  width: 70vw;
  text-wrap: wrap;
  margin-left: 10em;
@@ -192,6 +194,7 @@ h2{
  font-weight: bold;
  font-size: 1.5vw;
  margin: 0.5em;
+  text-align: flex-start;
 }
 
 

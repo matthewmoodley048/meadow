@@ -30,7 +30,7 @@ h3 {
 .greetings h1,
 .greetings h3 {
   top: 90%;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   text-align: center;
   width: 15%;
@@ -42,6 +42,7 @@ h3 {
 .nav{
   position: fixed;
   top: 90%;
+  overflow: hidden;
   text-align: center;
     padding: 1%;
     width: 15%;
@@ -69,7 +70,7 @@ color: rgb(0, 0, 0);
 }
 
 .nav{
-  position: fixed;
+  position: absolute;
   flex-direction: row;
   top: 95%;
   left: 43%;
@@ -97,6 +98,7 @@ color: rgb(0, 0, 0);
 .nav{
     padding: 1%;
     width: 85%;
+    overflow: hidden;
     text-align: center;
     border-radius: 13px;
     text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.15);

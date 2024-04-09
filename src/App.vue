@@ -30,6 +30,7 @@ import NavBar from './components/NavBar.vue';
 }
 
 .wrapper{
+position: absolute;
   align-content: center;
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.4);

@@ -5,8 +5,8 @@ import NavBar from './components/NavBar.vue';
 </script>
 
 <template >
-   <div class="wrapper">
   <NavBar msg="Meadow"/>
+   <div class="wrapper">
     <router-view v-slot="{Component}">
       <Transition name="page-opacity" mode="out-in">
         <component :is="Component"/>
@@ -30,7 +30,6 @@ import NavBar from './components/NavBar.vue';
 }
 
 .wrapper{
-position: absolute;
   align-content: center;
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.4);
@@ -42,6 +41,7 @@ position: absolute;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 2px 3px rgba(0,0,0,0.1);
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 80vh;
   width: 80vw;
 }
@@ -82,9 +82,9 @@ nav a:first-of-type {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow-x: hidden;
   scrollbar-width: 200%;
-  overflow-y: scroll;
+  overflow-y:scroll;
+  overflow-x:hidden;
   height: 80%;
   width: 85vw;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05), inset 0px 0px 2px 3px rgba(0,0,0, 0,1) ;

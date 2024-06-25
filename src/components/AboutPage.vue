@@ -21,7 +21,9 @@
 
 <style scoped>
     .container {
-        display: flex;
+       width:auto;
+       height:100vh;
+       display: flex;
         margin: auto;
         padding: 0;
         flex-direction: column;
@@ -36,6 +38,7 @@
         background-size: contain;
         border-radius: 0px;
         box-shadow: inset 0px 0px 10px 50px #f2f2f2, 0px 0px 10px 10px #f2f2f2;
+        margin-top:10px;
         margin-bottom: 20px;
     }
 
@@ -44,6 +47,7 @@
     }
 
     h1 {
+        margin-top:10px;
         font-weight: 500;
         font-size: 3vh;
     }

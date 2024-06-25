@@ -87,7 +87,10 @@ This helps alleviate the problem seen in the train and test method of predicting
 
     <hr class="rounded"/>
   <div class="columns">
+    <div class="subheadings">   
       <h2>Conclusion</h2>
+    </div>
+    <div class="body">
     <article class="blocks">
       <p>
 So, to wrap it up, machine learning isn't some magic trick where a computer suddenly gets super smart. 
@@ -100,6 +103,7 @@ It's about building a fancy calculator, if you will, that can take a bunch of da
 But that's just the tip of the iceberg. 
       </p>
     </article> 
+    </div>
   </div>
   <hr class="rounded"/>
 </template>
@@ -121,7 +125,7 @@ p {
   margin-bottom: 1em;
 }
 
-h2{
+h2 {
   font-weight: bold;
   font-size: 2.5vw;
   margin: 0.5em;
@@ -136,6 +140,11 @@ hr.rounded {
   width: 105vw;
 }
 
+.subheadings {
+ width: 100vw;
+ margin: auto;
+}
+
 .coverImage {
   position: relative;
   background: url('../assets/images/machineLearning.jpg') no-repeat center;
@@ -148,21 +157,22 @@ hr.rounded {
 
 .columns {
 columns: 1;
+grid: 150px / auto auto auto;
+height: auto;
 margin: 1em;
 }
 
-.blocks{
+.blocks {
 margin-top: 1em;
 width: 70vw;
 overflow-wrap: break-word;
 }
 
-  
 
 @media (min-width: 1000px) {
   .header h1,
 
-.blocks{
+.blocks {
  width:32vw;
  margin: 1em;
  overflow-wrap: break-word;
@@ -182,7 +192,7 @@ h1 {
  position: relative;
  top: 0px;
  padding-left: 1vw;
- margin: 0.5em;                                                                                                                                                                        
+ margin: 0.5em;
  text-align: flex-start;
 }
 
@@ -190,7 +200,7 @@ p {
  font-size: 1vw;
 }
 
-h2{
+h2 {
  font-weight: bold;
  font-size: 1.5vw;
  margin: 0.5em;

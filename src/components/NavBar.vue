@@ -2,55 +2,43 @@
 defineProps<{
   msg: string
 }>()
-
 </script>
 
 <template>
-  <div class="greetings">
-    <nav class="nav">
-        <RouterLink class="navItems" to="/">Home</RouterLink>
-         |
-        <RouterLink  class="navItems" to="/about">About</RouterLink>
-    <h1> {{ msg }}</h1>
-    </nav>
-
-  </div>
+<div class="nav">
+  <nav  tabs type="dark" variant="dark">
+   <RouterLink class="brand" to="/">{{msg}}</RouterLink>
+   <RouterLink class="navItems" to="/">Home</RouterLink>
+   <RouterLink class="navItems" to="/about" disabled>About</RouterLink>
+  </nav>
+</div>
 </template>
 
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2rem;
-  position: fixed;
+
+.nav {
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: flex-start;
+   align-items: stretch;
+   overflow: hidden; 
+   position: fixed;
+   text-align: center;
+   padding: 1%;
+   width: 100vw;
+   border-radius: 13px;
 }
 
-h3 {
-  font-size: 1.2rem;
-}
-.greetings h1,
-.greetings h3 {
-  top: 90%;
-  position: absolute;
-  flex-direction: column;
-  text-align: center;
-  width: 15%;
-  border-radius: 13px;
-  text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.15);
-  color: rgb(0, 0, 0);
+.brand {
+  left: 0;
+  margin-right: 25%;
 }
 
-.nav{
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-    padding: 1%;
-    width: 15%;
-    border-radius: 13px;
-    text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.15);
-color: rgb(0, 0, 0);
+.navItems {
+  color: black.500;
+  margin-left: 2%;
+  padding: 10%;
 }
-.navItems{
-  color: rgb(0, 0, 0);
-  margin: 2%;
-}
+
 </style>

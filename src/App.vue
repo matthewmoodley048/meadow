@@ -4,8 +4,8 @@ import NavBar from './components/NavBar.vue';
 
 </script>
 
-<template >
-  <NavBar msg="Meadow"/>
+<template>
+  <div class="background">
    <div class="wrapper">
     <router-view v-slot="{Component}">
       <Transition name="page-opacity" mode="out-in">
@@ -13,6 +13,8 @@ import NavBar from './components/NavBar.vue';
       </Transition>
     </router-view>
    </div>
+  </div>
+  <NavBar msg="Meadow"/>
 </template>
 
 <style scoped>
@@ -29,19 +31,45 @@ import NavBar from './components/NavBar.vue';
  transform: translateY(60px)
 }
 
+.background{
+  width: 100vw;
+  position: fixed;
+  background-size: 5px 5px;
+  background-repeat: repeat;
+  background-image: radial-gradient(white, rgba(0,0,0,0.1), white); 
+  top: 0;
+  left: 0;
+  height: 100vh;
+  animation: pan 120s linear infinite;
+}
+
+@keyframes pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
 .wrapper{
-  align-content: center;
+  margin-top:5vh;
+  margin-left: 10vw;
+  align-items: center;
+  justify-content: center;  
   color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.4);
-  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 2%;
-  border-width: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 2px 3px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 0px 8px rgba(246,245,242,0.5);
+  border-width: 100%;
+  margin-top: 7vh;
   overflow-y: scroll;
   overflow-x: hidden;
   height: 80vh;
   width: 80vw;
 }
+
 *::-webkit-scrollbar {
   width: 0px; /* Adjust the width as needed */
 }
@@ -69,21 +97,5 @@ nav a:first-of-type {
   src: url('./assets/fonts/Croissant_One/CroissantOne-Regular.ttf') format('truetype');
 }
 
-@media (min-width: 1024px) {
-  .wrapper{
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  border-width: 90%;
-  transform: translate(-50%, -50%);
-  scrollbar-width: 200%;
-  overflow-y:scroll;
-  overflow-x:hidden;
-  height: 80%;
-  width: 85vw;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05), inset 0px 0px 2px 3px rgba(0,0,0, 0,1) ;
-}
 
-}
 </style>
